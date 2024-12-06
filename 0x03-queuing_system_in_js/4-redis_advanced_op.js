@@ -10,7 +10,9 @@ client.on("error", (err) => {
   console.log(`Redis client not connected to the server: ${err}`);
 });
 
-// Function to create the hash
+/**
+ * Function to create the hash.
+ */
 const createHash = () => {
   client.hset("ALX", "Portland", 50, print);
   client.hset("ALX", "Seattle", 80, print);
@@ -20,7 +22,9 @@ const createHash = () => {
   client.hset("ALX", "Paris", 2, print);
 };
 
-// Function to display the hash
+/**
+ * Function to display the hash.
+ */
 const displayHash = () => {
   client.hgetall("ALX", (err, reply) => {
     if (err) {
