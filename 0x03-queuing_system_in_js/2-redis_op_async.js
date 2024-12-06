@@ -38,7 +38,7 @@ const displaySchoolValue = async (schoolName) => {
 
 // Call the functions as specified
 (async () => {
-  displaySchoolValue("Holberton");
+  await displaySchoolValue("Holberton");
   setNewSchool("HolbertonSanFrancisco", "100");
-  displaySchoolValue("HolbertonSanFrancisco");
+  await displaySchoolValue("HolbertonSanFrancisco");
 })();
